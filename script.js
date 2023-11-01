@@ -61,12 +61,12 @@ Array.from(btn).forEach((button) => {
         // for delete all
         else if (e.target.innerHTML === 'C') {
             input.value = null;
-            
-        }    
+
+        }
         // for font images
         else if (e.target.innerHTML === '<i class="fa-solid fa-divide"></i>' || e.target.innerHTML === '<i class="fa-solid fa-delete-left"></i>' || e.target.innerHTML === '<i class="fa-solid fa-minus"></i>') {
             input.value = input.value;
-        }    
+        }
         else if (e.target.innerHTML === 'X') {
             input.value += '*';
         }
@@ -75,108 +75,3 @@ Array.from(btn).forEach((button) => {
         }
     })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Another one
-// let str = document.getElementById('inputBox');
-// let error = document.getElementsByClassName('error');
-// let button = document.getElementById('button');
-// str.addEventListener('keypress', function(e) {
-//     if (e.key === 'Enter') {
-//         result();
-//     }
-// })
-
-// // onclick functions
-// function Delete() {
-//     str.value = null;
-//     if (!error[0].hasAttribute('hidden')) {
-//         error[0].setAttribute('hidden', 'true');
-//     }
-//     if (!error[1].hasAttribute('hidden')) {
-//         error[1].setAttribute('hidden', 'true');
-//     }
-// }
-// function removeLast() {
-//     let s = str.value;
-//     str.value = s.substring(0, s.length-1);
-// }
-// function keydiv(){
-//     str.value = str.value + '/';
-// }
-// function keyX(){
-//     str.value = str.value + '*';
-// }
-// function key7(){
-//     str.value = str.value + '7';
-// }
-// function key8(){
-//     str.value = str.value + '8';
-// }
-// function key9(){
-//     str.value = str.value + '9';
-// }
-// function key4(){
-//     str.value = str.value + '4';
-// }
-// function key5(){
-//     str.value = str.value + '5';
-// }
-// function key6(){
-//     str.value = str.value + '6';
-// }
-// function key1(){
-//     str.value = str.value + '1';
-// }
-// function key2(){
-//     str.value = str.value + '2';
-// }
-// function key3(){
-//     str.value = str.value + '3';
-// }
-// function key0(){
-//     str.value = str.value + '0';
-// }
-// function keysub(){
-//     str.value = str.value + '-';
-// }
-// function keyplus(){
-//     str.value = str.value + '+';
-// }
-// function keydot() {
-//     str.value = str.value + '.';
-// }
-// function result() {
-//     console.log(str.value, typeof str.value);
-//     try {
-//         if (eval(str.value) === Infinity) {
-//             str.value = 0;
-//             error[1].removeAttribute('hidden');
-//         }
-//         else {
-//             str.value = eval(str.value);
-//         }
-//     }
-//     catch (e) {
-//         str.value = 0;
-//         error[0].removeAttribute('hidden');
-//     }
-//         // str.value = eval(str.value);
-//         // console.log(typeof eval(str.value));
-// }
-
-
-
-
