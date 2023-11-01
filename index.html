@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web Calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>My Calculator</title>
+</head>
+
+<body>
+    <div style="background-color: red; color: #fff;">
+    </div>
+    <div style="background-color: yellow; color: blue;">
+    </div>
+    <!-- Body of calculator -->
+    <header class="mainBody">
+        <div class="logo"><i class="fa-solid fa-calculator"></i> <b class="red">Calculator</b> 
+            <p class="message1 error" hidden><span style="color: red;">error</span>:Numbers only, no text.</p>
+            <p class="message2 error" hidden><span style="color: red;">ZeroDivisionError</span>: division by zero.</p>
+        </div>
+            <div class="container">
+            <!-- input row -->
+            <input type="text" id="inputBox" placeholder="0" class="textBox">
+            <!-- first row -->
+            <button type="submit" id="button" >C</button>
+            <button type="submit" id="button" onclick="removeLast()"><i class="fa-solid fa-delete-left"></i></button>
+            <button type="submit" id="button" onclick="divideKey()"><i class="fa-solid fa-divide"></i></button>
+            <button type="submit" id="button" >X</button>
+            <!-- second row -->
+            <button type="submit" id="button" >7</button>
+            <button type="submit" id="button" >8</button>
+            <button type="submit" id="button" >9</button>
+            <button type="submit" id="button" onclick="minusKey()"><i class="fa-solid fa-minus"></i></button>
+            <!-- third row -->
+            <button type="submit" id="button" >4</button>
+            <button type="submit" id="button" >5</button>
+            <button type="submit" id="button" >6</button>
+            <button type="submit" id="button" >+</i></button>
+            <!-- fourth row -->
+            <button type="submit" id="button" >1</button>
+            <button type="submit" id="button" >2</button>
+            <button type="submit" id="button" >3</button>
+            <button type="submit" id="button" class="resultButton" >=</i></button>
+            <!-- fifth row -->
+            <button type="submit" id="button" class="zeroButton"  >0</button>
+            <button type="submit" id="button" >.</button>
+
+        </div>
+    </header>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
