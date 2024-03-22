@@ -35,7 +35,7 @@ body {
 
 /* logo */
 .logo {
-    background-color: #fff;
+    background-color: rgb(17, 147, 239);
     color: rgba(0, 0, 0, 10);
     font-family: 'Courier New', Courier, monospace;
     padding-bottom: 5px;
